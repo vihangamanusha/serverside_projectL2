@@ -1,0 +1,41 @@
+
+            /////////////////////////////////////////////////////////////
+            National Identity Card number: 20013452242
+            First Name: kumara 
+            Last Name: siriwardhana 
+            Date Of Birth: 2003-07-09 
+            Sex: male 
+            Height: 3.1 
+            Weight: 51 
+            Marital Status: single 
+            Contact Number: 0775236450
+            Email: cpinimal@gmail.com 
+            Address: main street, mathara
+            Medications: yes 
+            Emergency Contact First Name: piyadasa 
+            Emergency Contact Last Name: sirisena 
+            Relationship: cousin
+            Emergency Contact Number: 0772530654
+
+            //////////////////////////////////////////////////////////////
+            
+            /////////////////////////////////////////////////////////////
+            National Identity Card number: 20013452242
+            First Name: chalitha 
+            Last Name: siriwardhana 
+            Date Of Birth: 2024-11-01 
+            Sex: male 
+            Height: 2.8 
+            Weight: 55 
+            Marital Status: married 
+            Contact Number: 0775236456
+            Email: chalitha@gmail.com 
+            Address: mili@gmail.com
+            Medications: no 
+            Emergency Contact First Name: piyadasa 
+            Emergency Contact Last Name: weerarathna 
+            Relationship: father
+            Emergency Contact Number: 0720245789
+
+            //////////////////////////////////////////////////////////////
+            
