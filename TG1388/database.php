@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $description = $_POST['description'];
 
     
-    //ihniuhiuh//
+   
       
     $filePath = "appointment.txt";
     $myfile = fopen($filePath, "a") or die("Unable to open file!");
@@ -21,14 +21,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fwrite($myfile, $data);
     fclose($myfile);
 
-   
+    $servername = "localhost";
+    $username = "root";
+    $password = "801@Vihanga";
 
 
-     $conn=new mysqli('localhost','root','801@Vihanga','oppinment');
+     $conn=new mysqli('localhost','root','801@Vihanga');
     
      if($conn->connect_error){
         die("connection failed: ".$conn->connect_error);
      }
+     $sql="CREATE DATABASE IF NOT EXISTS oppinment";
+     if($conn->query($sql)===FALSE){
+        die("Error creating database :".$conn->error);
+     }
+
+     $conn->select_db("oppinment");
+
+    $sql = "CREATE TABLE IF NOT EXISTS oppoinment_data (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        Title VARCHAR(20),
+        Firstname VARCHAR(50),
+        Lastname VARCHAR(50),
+        Phonenumber VARCHAR(15),
+        Oppoinmentdate DATE,
+        Doctor VARCHAR(50),
+        Description TEXT
+    )";
+
+     if ($conn->query($sql) === FALSE) {
+        die("Error creating table: " . $conn->error);
+    }
+    
      $sql = "INSERT INTO oppoinment_data (Title, Firstname, Lastname, Phonenumber, Oppoinmentdate, Doctor, Description) VALUES (?, ?, ?, ?, ?, ?, ?)";
      $stmt = $conn->prepare($sql);
      if ($stmt === false) {

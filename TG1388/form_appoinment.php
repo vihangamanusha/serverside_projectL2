@@ -194,7 +194,8 @@
             <?php
                 echo "Date & Time -"."<br>" .(date("Y"))."-".date("M")."-".date("D")." ".date("H").":".date("i").":".date("s")." ".date("a")."<br>";
             ?>
-            <button type="button" onclick="close_popup();">ok</button>
+        
+         <a href="https://www.youtube.com/watch?v=XnPauCKGHI8"><button type="button" onclick="close_popup();">proceed to payement</button></a>
     </div>
 
 
